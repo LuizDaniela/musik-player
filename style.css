@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 20vh;
+}
+
+.color-changing-text {
+    font-size: 40px;
+    animation: colorChange 1s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: #FF0000; }
+    25% { color: #00FF00; }
+    50% { color: #0000FF; }
+    75% { color: #FFFF00; }
+    100% { color: #FF00FF; }
+}
+
+button {
+    background-color: #FF00FF;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #FF0078;
+}
+
+#audio-player {
+    display: none;
+}
+
+#info-section {
+    background-color: #222;
+    padding: 50px 20px;
+    margin-top: 100vh;
+    border-top: 2px solid #444;
+}
+
+#info-section h2 {
+    color: #FF00FF;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#info-section h3 {
+    color: #FF0080;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#info-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #DDD;
+}
+
+.lyrics p {
+    font-size: 20px;
+    font-style: italic;
+    color: #FFF;
+    margin: 5px 0;
+}
